@@ -1,0 +1,5 @@
+python-django-pyscss (1.0.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #752764)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 26 Jun 2014 17:02:53 +0800
