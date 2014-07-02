@@ -1,3 +1,9 @@
+python-django-pyscss (1.0.1-2) unstable; urgency=medium
+
+  * Added missing build-depends: python-pil (Closes: #753380).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 02 Jul 2014 15:29:35 +0000
+
 python-django-pyscss (1.0.1-1) unstable; urgency=medium
 
   * Initial release. (Closes: #752764)
