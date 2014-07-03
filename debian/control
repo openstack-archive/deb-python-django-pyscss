@@ -25,8 +25,11 @@ Package: python-django-pyscss
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
 Depends: libjs-jquery,
+         python-compressor,
          python-django,
+         python-django-discover-runner,
          python-pil,
+         python-pyscss (>= 1.2),
          ${misc:Depends},
          ${python:Depends}
 Description: makes it easier to use PySCSS in Django
