@@ -12,6 +12,7 @@ UPSTREAM_GIT = git://github.com/fusionbox/django-pyscss.git
 override_dh_clean:
 	dh_clean -O--buildsystem=python_distutils
 	rm -f testproject/__init__.pyc testproject/testproject/__init__.pyc testproject/testproject/settings.pyc
+	rm -rf tmp
 
 override_dh_install:
 	set -e && for pyvers in $(PYTHONS); do \
