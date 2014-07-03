@@ -24,7 +24,11 @@ Homepage: https://github.com/fusionbox/django-pyscss
 Package: python-django-pyscss
 Architecture: all
 Pre-Depends: dpkg (>= 1.15.6~)
-Depends: ${misc:Depends}, ${python:Depends}
+Depends: libjs-jquery,
+         python-django,
+         python-pil,
+         ${misc:Depends},
+         ${python:Depends}
 Description: makes it easier to use PySCSS in Django
  Django-pyscss is a collection of tools for making it easier to use pyScss
  within Django. It overwrites the import system to use Django's staticfiles

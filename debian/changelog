@@ -1,6 +1,7 @@
 python-django-pyscss (1.0.1-2) unstable; urgency=medium
 
-  * Added missing build-depends: python-pil (Closes: #753380).
+  * Added missing build-depends: python-pil, libjs-jquery and python-django,
+    so it doesn't download with pip (Closes: #753380).
 
  -- Thomas Goirand <zigo@debian.org>  Wed, 02 Jul 2014 15:29:35 +0000
 
