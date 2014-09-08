@@ -1,0 +1,19 @@
+Description: Add Django 1.7 compat.
+Author: Thomas Goirand <zigo@debian.org>
+Bug-Debian: https://bugs.debian.org/755628
+Forwarded: no
+Last-Update: 2014-09-09
+
+--- python-django-pyscss-1.0.1.orig/testproject/runtests.py
++++ python-django-pyscss-1.0.1/testproject/runtests.py
+@@ -3,6 +3,10 @@ import os
+ import sys
+ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testproject.testproject.settings")
+ 
++import django
++if hasattr(django, 'setup'):
++    django.setup()
++
+ from django.test.utils import get_runner
+ from django.conf import settings
+ 
