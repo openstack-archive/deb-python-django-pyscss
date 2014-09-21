@@ -1,3 +1,11 @@
+python-django-pyscss (1.0.2-2) unstable; urgency=medium
+
+  * Drop python-django-discover-runner and python-pil from depends, as it is
+    only needed for tests. Also, python-django-discover-runner requires
+    python-unittest2, which conflicts with horizon.
+
+ -- Thomas Goirand <zigo@debian.org>  Sun, 21 Sep 2014 07:24:40 +0000
+
 python-django-pyscss (1.0.2-1) unstable; urgency=medium
 
   * New upstream release.
