@@ -2,6 +2,7 @@ python-django-pyscss (1.0.3-1) unstable; urgency=medium
 
   * New upstream release.
   * Added fix-storage.prefix-not-found.patch for Django 1.7 compat.
+  * Do not test under Python 2.6.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 30 Sep 2014 01:37:41 +0000
 
