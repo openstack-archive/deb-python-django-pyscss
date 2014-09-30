@@ -1,1 +1,2 @@
 add-django-1.7-compat.patch
+fix-storage.prefix-not-found.patch
