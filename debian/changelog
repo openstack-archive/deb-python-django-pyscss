@@ -1,6 +1,7 @@
 python-django-pyscss (1.0.3-2) unstable; urgency=medium
 
   * Added python-simplejson as build-depends.
+  * Standards-Version is now 3.9.6 (no change).
 
  -- Thomas Goirand <zigo@debian.org>  Sat, 18 Oct 2014 14:44:34 +0000
 
