@@ -1,3 +1,9 @@
+python-django-pyscss (1.0.3-2) unstable; urgency=medium
+
+  * Added python-simplejson as build-depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 18 Oct 2014 14:44:34 +0000
+
 python-django-pyscss (1.0.3-1) unstable; urgency=medium
 
   * New upstream release.

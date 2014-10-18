@@ -15,7 +15,8 @@ Build-Depends: debhelper (>= 9),
                python-nose,
                python-pil,
                python-pyscss (>= 1.2),
-               python-setuptools
+               python-setuptools,
+               python-simplejson
 Standards-Version: 3.9.5
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-pyscss.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-pyscss.git
