@@ -1,0 +1,34 @@
+Description: make tests succeed on Django-1.7
+Author: Matthias Runge <mrunge@redhat.com>
+Date: Fri, 17 Oct 2014 10:47:19 +0200
+Origin: upstream, https://github.com/fusionbox/django-pyscss/commit/fc83133312ef976dd24905136967102351b814ea
+Last-Update: 2014-11-12
+
+diff --git a/django_pyscss/utils.py b/django_pyscss/utils.py
+index 8ff5ad9..d668280 100644
+--- a/django_pyscss/utils.py
++++ b/django_pyscss/utils.py
+@@ -13,6 +13,7 @@ def find_all_files(glob):
+     """
+     for finder in finders.get_finders():
+         for path, storage in finder.list([]):
+-            if fnmatch.fnmatchcase(os.path.join(storage.prefix or '', path),
++            if fnmatch.fnmatchcase(os.path.join(getattr(storage, 'prefix', '')
++                                                or '', path),
+                                    glob):
+                 yield path, storage
+diff --git a/testproject/runtests.py b/testproject/runtests.py
+index 394f24a..09930f0 100644
+--- a/testproject/runtests.py
++++ b/testproject/runtests.py
+@@ -3,6 +3,10 @@
+ import sys
+ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testproject.testproject.settings")
+ 
++import django
++if hasattr(django, 'setup'):
++    django.setup()
++
+ from django.test.utils import get_runner
+ from django.conf import settings
+ 

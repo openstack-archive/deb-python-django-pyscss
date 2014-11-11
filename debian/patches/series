@@ -1,2 +1,1 @@
-add-django-1.7-compat.patch
-fix-storage.prefix-not-found.patch
+make_tests_succeed_on_Django-1.7.patch

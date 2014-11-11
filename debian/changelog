@@ -1,3 +1,12 @@
+python-django-pyscss (1.0.3-3) unstable; urgency=medium
+
+  * Using upstream patch instead of the one I produce: upstrema patch is much
+    shorter, is Django 1.6 compatible, and avoids using orderedict which isn't
+    available in Python 2.6 (all of which makes it harder to backport to
+    Wheezy).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 11 Nov 2014 22:24:17 +0000
+
 python-django-pyscss (1.0.3-2) unstable; urgency=medium
 
   * Added python-simplejson as build-depends.
