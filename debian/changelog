@@ -1,3 +1,9 @@
+python-django-pyscss (2.0.2-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 04 Aug 2015 07:40:16 +0000
+
 python-django-pyscss (1.0.3-3) unstable; urgency=medium
 
   * Using upstream patch instead of the one I produce: upstrema patch is much
