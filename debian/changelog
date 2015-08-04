@@ -1,6 +1,7 @@
 python-django-pyscss (2.0.2-1) experimental; urgency=medium
 
   * New upstream release.
+  * Added extend-diff-ignore = "^[^/]*[.]dist/.*"
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 04 Aug 2015 07:40:16 +0000
 
