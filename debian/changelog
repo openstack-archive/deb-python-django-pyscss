@@ -1,3 +1,11 @@
+python-django-pyscss (1.0.3-4) unstable; urgency=medium
+
+  * Added missing dependency for python-mock (Closes: #796753).
+  * Move some stuff from Build-Depends to Build-Depends-Indep.
+  * Added dh-python as build-depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 24 Aug 2015 17:21:16 +0200
+
 python-django-pyscss (1.0.3-3) unstable; urgency=medium
 
   * Using upstream patch instead of the one I produce: upstrema patch is much
