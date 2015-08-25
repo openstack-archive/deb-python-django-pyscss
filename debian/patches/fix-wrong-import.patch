@@ -1,0 +1,23 @@
+Description: Fix wrong import
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2015-08-25
+
+--- python-django-pyscss-1.0.3.orig/django_pyscss/scss.py
++++ python-django-pyscss-1.0.3/django_pyscss/scss.py
+@@ -7,11 +7,13 @@ from django.contrib.staticfiles.storage
+ from django.conf import settings
+ 
+ from scss import (
+-    Scss, dequote, log, SourceFile, SassRule, config,
++    Scss, log, config,
+ )
+ 
+ from django_pyscss.utils import find_all_files
+-
++from scss.util import dequote
++from scss.source import SourceFile
++from scss.rule import SassRule
+ 
+ # TODO: It's really gross to modify this global settings variable.
+ # This is where PyScss is supposed to find the image files for making sprites.
