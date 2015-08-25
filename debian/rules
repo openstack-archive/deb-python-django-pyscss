@@ -15,7 +15,7 @@ override_dh_clean:
 	rm -rf tmp
 
 override_dh_install:
-	set -e && for pyvers in $(PYTHONS); do \
+	set -e ; for pyvers in $(PYTHONS); do \
 		python$$pyvers setup.py install --install-layout=deb \
 			--root $(CURDIR)/debian/python-django-pyscss; \
 	done
@@ -28,7 +28,7 @@ override_dh_auto_test:
 ifeq (,$(findstring nocheck, $(DEB_BUILD_OPTIONS)))
 	set -e && for pyvers in 2.7 ; do \
 		echo "===> Testing with python$$pyvers" ; \
-		PYTHON=python$$pyvers python$$pyvers setup.py test ; \
+		PYTHONPATH=. PYTHON=python$$pyvers python$$pyvers setup.py test ; \
 	done
 endif
 
