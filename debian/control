@@ -8,14 +8,22 @@ Build-Depends: debhelper (>= 9),
                libjs-jquery,
                python-all,
                python-setuptools,
+               python3-all,
+               python3-setuptools,
 Build-Depends-Indep: python-compressor,
                      python-django,
                      python-django-discover-runner,
-                     python-mock,
                      python-nose,
                      python-pil,
-                     python-pyscss (>= 1.2),
+                     python-pyscss (>= 1.3.4),
                      python-simplejson,
+                     python3-compressor,
+                     python3-django,
+                     python3-django-discover-runner,
+                     python3-nose,
+                     python3-pil,
+                     python3-pyscss (>= 1.2),
+                     python3-simplejson,
 Standards-Version: 3.9.6
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=openstack/python-django-pyscss.git
 Vcs-Git: git://anonscm.debian.org/openstack/python-django-pyscss.git
@@ -26,10 +34,10 @@ Architecture: all
 Depends: libjs-jquery,
          python-compressor,
          python-django,
-         python-pyscss (>= 1.2),
+         python-pyscss (>= 1.3.4),
          ${misc:Depends},
          ${python:Depends},
-Description: makes it easier to use PySCSS in Django
+Description: makes it easier to use PySCSS in Django - Python 2.7
  Django-pyscss is a collection of tools for making it easier to use pyScss
  within Django. It overwrites the import system to use Django's staticfiles
  app. This way you can import SCSS files from any app (or any file that's
@@ -40,3 +48,27 @@ Description: makes it easier to use PySCSS in Django
  command-line arguments AND makes it possible for the exceptions and warnings
  that pyScss emits to bubble up to your process so that you can actually know
  what's going on.
+ .
+ This package contains the Python 2.7 module.
+
+Package: python3-django-pyscss
+Architecture: all
+Depends: libjs-jquery,
+         python3-compressor,
+         python3-django,
+         python3-pyscss (>= 1.3.4),
+         ${misc:Depends},
+         ${python3:Depends},
+Description: makes it easier to use PySCSS in Django - Python 3.x
+ Django-pyscss is a collection of tools for making it easier to use pyScss
+ within Django. It overwrites the import system to use Django's staticfiles
+ app. This way you can import SCSS files from any app (or any file that's
+ findable by the STATICFILES_FINDERS) with no hassle. It provides a
+ django-compressor precompile filter class so that you can easily use pyScss
+ with django-compressor without having to bust out to the shell. This has the
+ added benefit of removing the need to configure pyScss through its
+ command-line arguments AND makes it possible for the exceptions and warnings
+ that pyScss emits to bubble up to your process so that you can actually know
+ what's going on.
+ .
+ This package contains the Python 3.x module.
