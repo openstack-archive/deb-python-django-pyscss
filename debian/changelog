@@ -2,6 +2,7 @@ python-django-pyscss (2.0.2-3) unstable; urgency=medium
 
   * Uploading to Unstable.
   * (build-)depends on python-pyscss 1.3.4 not 1.2.
+  * Added missing (build-)depends on python{3,}-mock.
 
  -- Thomas Goirand <zigo@debian.org>  Thu, 27 Aug 2015 08:41:16 +0000
 
