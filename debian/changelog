@@ -6,10 +6,12 @@ python-django-pyscss (2.0.2-4) UNRELEASED; urgency=medium
 
   [ Ivan Udovichenko ]
   * Remove python-django-discover-runner from build dependencies as starting
-    from Django >= 1.6.0 already includes it [1][2].
-    [1] https://docs.djangoproject.com/en/1.6/releases/1.6/
-    [2] https://pypi.python.org/pypi/django-discover-runner/1.0
+    from Django >= 1.6.0 already includes new test runner 
+    (django.test.runner.DiscoverRunner):
+    - https://docs.djangoproject.com/en/1.6/releases/1.6/
+    - https://pypi.python.org/pypi/django-discover-runner/1.0
   * Set lower bound for python-django to >= 1.6.0 .
+  * Add remove-django-discover-runner-from-test_require-list.patch .
   * Add myself to Uploaders field.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 15 Sep 2015 10:34:41 +0000
