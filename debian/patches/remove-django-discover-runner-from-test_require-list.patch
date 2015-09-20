@@ -1,9 +1,11 @@
-From 14de6c46372cfc81a15a8f774671ebf04fa8cab8 Mon Sep 17 00:00:00 2001
+From 3b9f4786a78e173f13e912208ce0903520bf8a58 Mon Sep 17 00:00:00 2001
 From: Ivan Udovichenko <iudovichenko@mirantis.com>
 Date: Sat, 19 Sep 2015 01:33:54 +0300
-Subject: [PATCH] Remove django-discover-runner test_require list in setup.py
+Subject: [PATCH] Remove django-discover-runner from test_require list in
+ setup.py
 
-Django >= 1.6 already includes discover-runner.
+Bump up version of Django.
+As Django >= 1.6 already includes discover-runner.
 ---
  setup.py | 3 +--
  1 file changed, 1 insertion(+), 2 deletions(-)
