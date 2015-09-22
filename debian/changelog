@@ -1,4 +1,4 @@
-python-django-pyscss (2.0.2-4) UNRELEASED; urgency=medium
+python-django-pyscss (2.0.2-4) unstable; urgency=medium
 
   [ Thomas Goirand ]
   * Fixed (build-)depends.
