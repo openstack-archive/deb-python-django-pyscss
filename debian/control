@@ -28,7 +28,7 @@ Build-Depends-Indep: python-compressor,
                      python3-pil,
                      python3-pyscss (>= 1.2),
                      python3-simplejson,
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Vcs-Browser: https://anonscm.debian.org/cgit/openstack/python-django-pyscss.git/
 Vcs-Git: https://anonscm.debian.org/git/openstack/python-django-pyscss.git
 Homepage: https://github.com/fusionbox/django-pyscss
