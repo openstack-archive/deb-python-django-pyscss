@@ -10,6 +10,7 @@ python-django-pyscss (2.0.2-5) UNRELEASED; urgency=medium
   * Fixed debian/copyright ordering.
   * Also test with Py3.
   * Standards-Version: 3.9.8 (no change).
+  * Using pkgos-dh_auto_install from openstack-pkg-tools >= 52~.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 08:40:48 +0000
 
