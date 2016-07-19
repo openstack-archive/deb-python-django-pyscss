@@ -1,7 +1,7 @@
 Description: Define django template backend
 Author: Thomas Goirand <zigo@debian.org>
 Bug-Debian: https://bugs.debian.org/828671
-Forwarded: no
+Forwarded: https://github.com/fusionbox/django-pyscss/pull/43/commits/ddda505c6a05080ffc9f631e0cede5cbb6a032c2
 Last-Update: 2016-07-19
 
 --- python-django-pyscss-2.0.2.orig/testproject/testproject/settings.py
