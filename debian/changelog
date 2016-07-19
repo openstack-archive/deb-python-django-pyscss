@@ -1,9 +1,14 @@
 python-django-pyscss (2.0.2-5) UNRELEASED; urgency=medium
 
+  [ Ondřej Nový ]
   * Fixed VCS URLs (https).
   * d/rules: Changed UPSTREAM_GIT protocol to https
 
- -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:36:43 +0100
+  [ Thomas Goirand ]
+  * Add define-django-template-backend.patch to avoid FTBFS with Django 1.10
+    (Closes: #828671).
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 08:40:48 +0000
 
 python-django-pyscss (2.0.2-4) unstable; urgency=medium
 
