@@ -1,4 +1,4 @@
-python-django-pyscss (2.0.2-5) UNRELEASED; urgency=medium
+python-django-pyscss (2.0.2-5) unstable; urgency=medium
 
   [ Ondřej Nový ]
   * Fixed VCS URLs (https).
@@ -12,7 +12,7 @@ python-django-pyscss (2.0.2-5) UNRELEASED; urgency=medium
   * Standards-Version: 3.9.8 (no change).
   * Using pkgos-dh_auto_install from openstack-pkg-tools >= 52~.
 
- -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 08:40:48 +0000
+ -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 08:54:47 +0000
 
 python-django-pyscss (2.0.2-4) unstable; urgency=medium
 
