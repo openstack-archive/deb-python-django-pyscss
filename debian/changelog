@@ -7,6 +7,7 @@ python-django-pyscss (2.0.2-5) UNRELEASED; urgency=medium
   [ Thomas Goirand ]
   * Add define-django-template-backend.patch to avoid FTBFS with Django 1.10
     (Closes: #828671).
+  * Fixed debian/copyright ordering.
 
  -- Thomas Goirand <zigo@debian.org>  Tue, 19 Jul 2016 08:40:48 +0000
 
