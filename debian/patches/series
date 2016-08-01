@@ -1,2 +1,3 @@
 remove-django-discover-runner-from-test_require-list.patch
 define-django-template-backend.patch
+FTBFS-fix-unit-tests.patch

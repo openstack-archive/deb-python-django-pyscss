@@ -1,3 +1,12 @@
+python-django-pyscss (2.0.2-6) unstable; urgency=medium
+
+  * Fix FTBFS (Closes: #832830):
+    - Patch tests/test_scss.py
+    - Patch tests/test_compressor.py
+    - Build-Depends-Indep: add python{3,}-six.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 01 Aug 2016 10:32:18 +0000
+
 python-django-pyscss (2.0.2-5) unstable; urgency=medium
 
   [ Ondřej Nový ]
